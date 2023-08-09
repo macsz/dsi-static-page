@@ -1,0 +1,1 @@
+# dsi-static-page
