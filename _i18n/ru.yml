@@ -5,4 +5,9 @@ contact:
   contact: Контакт
   phone: Телефон
   email: Электронная почта
-  
+
+usedmachines:
+  usedmachines: Подержанные машины
+
+products:
+  products: Продукты

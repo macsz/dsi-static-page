@@ -5,4 +5,9 @@ contact:
   contact: Contacto
   phone: Teléfono
   email: Email
-  
+
+usedmachines:
+  usedmachines: Maquinas Usadas
+
+products:
+  products: Productos
