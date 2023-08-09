@@ -1,16 +1,37 @@
 main:
-  - name: "Services"
+  - name: "products.products"
     url: "/services/"
     weight: 2
-  - name: "Team"
-    url: "/team/"
+  - name: "contact.contact"
+    url: "/contact/"
     weight: 3
-  - name: "About"
+  - name: "usedmachines.usedmachines"
     url: "/about/"
     weight: 4
-  - name: "Contact"
-    url: "/contact/"
-    weight: 5
+  # - name: "products.products"
+  #   url: "/services/"
+  #   weight: 2
+  # - name: "contact.contact"
+  #   url: "/team/"
+  #   weight: 3
+  # - name: "contact.contact"
+  #   url: "/about/"
+  #   weight: 4
+  # - name: "contact.contact"
+  #   url: "/contact/"
+  #   weight: 5
+
+languages:
+  - name: "pl"
+    code: "pl"
+  - name: "en"
+    code: "gb"
+  - name: "de"
+    code: "de"
+  - name: "es"
+    code: "es"
+  - name: "ru"
+    code: "ru"
 
 footer:
   - name: "Home"

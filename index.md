@@ -10,5 +10,3 @@ show_call_box: true
 
 <!-- # DSI Food Technology. -->
 <img src="images/logo/dsi_light_fixed_crop.jpg" style="max-height:125px; max-width:425px; height:auto; width:auto;" />
-
-Projektowanie i budowa urządzeń przetwórstwa spożywczego od 2011.

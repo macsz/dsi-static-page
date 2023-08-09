@@ -1,0 +1,13 @@
+main:
+  description: Projektowanie i budowa urządzeń przetwórstwa spożywczego od 2011.
+
+contact:
+  contact: Kontakt
+  phone: Telefon
+  email: Email
+
+usedmachines:
+  usedmachines: Maszyny Używane
+
+products:
+  products: Produkty

@@ -1,0 +1,13 @@
+main:
+  description: Entwerfen und Bauen von Geräten für die Lebensmittelverarbeitung seit 2011.
+
+contact:
+  contact: Kontakt
+  phone: Telefon
+  email: Email
+
+usedmachines:
+  usedmachines: Gebrauchte Maschinen
+
+products:
+  products: Produkte

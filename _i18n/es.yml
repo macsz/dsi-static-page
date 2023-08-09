@@ -1,0 +1,13 @@
+main:
+  description: Diseño y construcción de equipos de procesamiento de alimentos desde 2011.
+
+contact:
+  contact: Contacto
+  phone: Teléfono
+  email: Email
+
+usedmachines:
+  usedmachines: Maquinas Usadas
+
+products:
+  products: Productos

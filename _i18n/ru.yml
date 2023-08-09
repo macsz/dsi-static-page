@@ -1,0 +1,13 @@
+main:
+  description: Проектируем и производим оборудование для пищевой промышленности с 2011 года.
+
+contact:
+  contact: Контакт
+  phone: Телефон
+  email: Электронная почта
+
+usedmachines:
+  usedmachines: Подержанные машины
+
+products:
+  products: Продукты

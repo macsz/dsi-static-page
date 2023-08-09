@@ -32,10 +32,16 @@ defaults:
     values:
       layout: "team"
 
+# multiple-languages
+languages: ["pl", "en", "de", "es", "ru"]
+# exclude_from_localizations: ["assets", "images"]
+# end multiple-languages
+
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
 plugins:
+  - jekyll-multiple-languages-plugin
   - jekyll-environment-variables
 
 exclude:
