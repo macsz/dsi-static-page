@@ -1,10 +1,20 @@
 <div id="main-menu" class="main-menu">
   {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
+  {% assign langs = site.data.menus.languages %}
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %}">
       <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
-  </ul>
+
+    {% for item in langs %}
+    <li class="lang-flag">
+      {% if item.name == 'pl' %}
+        <a href="{{ relative_url }}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
+        {% else %}
+        <a href="{{ item.name | relative_url }}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
+      {% endif %}
+    </li>
+    {% endfor %}
 </div>
