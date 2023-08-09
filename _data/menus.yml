@@ -12,6 +12,18 @@ main:
     url: "/contact/"
     weight: 5
 
+languages:
+  - name: "pl"
+    code: "pl"
+  - name: "en"
+    code: "gb"
+  - name: "de"
+    code: "de"
+  - name: "es"
+    code: "es"
+  - name: "ru"
+    code: "ru"
+
 footer:
   - name: "Home"
     url: "/"
