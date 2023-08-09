@@ -4,14 +4,18 @@
   <ul>
     {% for item in mainmenu %}
     <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{% t item.name %}</a>
+      {% if site.lang == 'pl' %}
+      <a href="{{ site.my_url }}/{{ item.url }}">{% t item.name %}</a>
+      {% else %}
+      <a href="{{ site.my_url }}/{{site.lang}}/{{ item.url }}">{% t item.name %}</a>
+      {% endif %}
     </li>
     {% endfor %}
 
     {% for item in langs %}
     <li class="lang-flag">
       {% if item.name == 'pl' %}
-        <a href="{{ relative_url }}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
+        <a href="{{ site.my_url }}/{{page.url}}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
         {% else %}
         <a href="{{ item.name | relative_url }}/{{ page.url}}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
       {% endif %}
