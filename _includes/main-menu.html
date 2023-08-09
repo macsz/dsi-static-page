@@ -13,7 +13,7 @@
       {% if item.name == 'pl' %}
         <a href="{{ relative_url }}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
         {% else %}
-        <a href="{{ item.name | relative_url }}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
+        <a href="{{ item.name | relative_url }}/{{ page.url}}"><span class="flag-icons {{ item.code | upcase }}"></span></a>
       {% endif %}
     </li>
     {% endfor %}
