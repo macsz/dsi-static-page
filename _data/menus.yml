@@ -5,9 +5,9 @@ main:
   - name: "contact.contact"
     url: "/contact/"
     weight: 3
-  - name: "usedmachines.usedmachines"
-    url: "/about/"
-    weight: 4
+  # - name: "usedmachines.usedmachines"
+  #   url: "/about/"
+  #   weight: 4
   # - name: "products.products"
   #   url: "/services/"
   #   weight: 2
