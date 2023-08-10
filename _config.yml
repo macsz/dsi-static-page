@@ -1,0 +1,58 @@
+baseurl: '/'
+my_url: 'http://165.227.128.98:4000'
+permalink: pretty
+title: 'DSI Food Technology'
+
+logo:
+  mobile: "images/logo/dsi_light_fixed_crop.jpg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/dsi_light_fixed_crop.jpg"
+  desktop_height: "32px"
+  desktop_width: "120px"
+
+home: 
+  limit_products: 6
+
+collections:
+  products:
+    output: true
+    sort_by: weight
+  team:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+
+# multiple-languages
+languages: ["pl", "en", "de", "es", "ru"]
+# exclude_from_localizations: ["assets", "images"]
+# end multiple-languages
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

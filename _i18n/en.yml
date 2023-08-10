@@ -1,0 +1,17 @@
+main:
+  main: Home
+  description: Designing and building food processing equipment since 2011.
+
+contact:
+  contact: Contact
+  phone: Phone
+  email: Email
+
+usedmachines:
+  usedmachines: Used Machines
+
+products:
+  products: Products
+  see_all: See all products
+  header: Products that grow with your business
+  description: In our offer, you will find innovative and reliable food processing machines, designed with the flexibility to adapt to the growing needs of your business. Regardless of the size of your business, we offer solutions that guarantee efficiency, quality, and durability, supporting you in your pursuit of success.
