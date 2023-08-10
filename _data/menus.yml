@@ -34,9 +34,9 @@ languages:
     code: "ru"
 
 footer:
-  - name: "Home"
+  - name: "main.main"
     url: "/"
     weight: 1
-  - name: "Contact"
+  - name: "contact.contact"
     url: "/contact/"
     weight: 2
