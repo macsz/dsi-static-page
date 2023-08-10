@@ -3,11 +3,12 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<div class="intro" style="padding-bottom: 25px; margin-bottom: 25px;">
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ content }}
+        <p>{% t main.description %}</p>
         {% if page.show_call_box %}
           {% include call.html show_button=true %}
         {% endif %}
@@ -23,16 +24,24 @@ bodyClass: "page-home"
 
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: limit %}
+    <div class="row justify-content-start" style="margin-bottom: 25px; padding-bottom: 25px;">
+      <div style="margin-bottom: 25px; padding-bottom:25px;">
+        <p>Historia firmy rozpoczęła się w 2011 roku. Nasze doświadczenia w branży spożywczej sięgają początku lat 90. Początkowo zajmowaliśmy się handlem i doradztwem, a od paru lat samodzielnie projektujemy i wykonujemy urządzenia do przetwórstwa spożywczego. Jesteśmy dumni z naszych projektów, których znaczna część to rozwiązania prototypowe nie mające swoich odpowiedników u innych producentów.</p>
+        <p>Jesteśmy jedynym przedstawicielem firmy Heinrich GmbH, producenta wielu ciekawych i nietypowych rozwiązań w branży przetwórczej.</p>
+        <p>Naszym celem jest stały rozwój, chcemy uczyć się we współpracy z naszymi klientami dla obopólnych korzyści.</p>
+        <p>Satysfakcja naszych Klientów jest również naszą satysfakcją.</p>
+      </div>
+
+      {% assign limit = site.home.limit_products | default: 6 %}
+      {% for product in site.products limit: limit %}
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
+            <div><img src="{{ product.image }}" style="object-fit:scale-down; width: 100%; max-height: 220px;" /></div>
             <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+              <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
             </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ product.content | markdownify | strip_html | truncate: 100 }}</p>
           </div>
         </div>
       </div>
@@ -40,13 +49,14 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
+        <a class="button button-primary" href="{{ "products" | relative_url }}">{% t products.see_all %}</a>
       </div>
     </div>
   </div>
 </div>
 
-{% if site.data.features %}
+{% if false %}
+<!-- site.data.features -->
 <div class="strip strip-grey">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">

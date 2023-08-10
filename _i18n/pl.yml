@@ -1,0 +1,17 @@
+main:
+  main: Strona Główna
+  description: Projektowanie i budowa urządzeń przetwórstwa spożywczego od 2011.
+
+contact:
+  contact: Kontakt
+  phone: Telefon
+  email: Email
+
+usedmachines:
+  usedmachines: Maszyny Używane
+
+products:
+  products: Produkty
+  see_all: Zobacz wszystkie produkty
+  header: Produkty, które rozwijają się wraz z Twoją firmą
+  description: W naszej ofercie znajdziesz innowacyjne i niezawodne maszyny do przetwórstwa spożywczego, zaprojektowane z myślą o elastycznym dostosowaniu się do rosnących potrzeb Twojego przedsiębiorstwa. Niezależnie od wielkości Twojego biznesu, oferujemy rozwiązania, które gwarantują efektywność, jakość i trwałość, wspierając Cię w dążeniu do sukcesu.

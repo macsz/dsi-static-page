@@ -7,6 +7,8 @@ bodyClass: "page-services"
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1>{% t products.header %}</h1>
+        <p>{% t products.description %}</p>
         {{ content }}
       </div>
       {% if page.intro_image %}
@@ -20,14 +22,15 @@ bodyClass: "page-services"
 
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% for service in site.services %}
+    {% for product in site.products %}
     <div class="col-12 col-md-6 mb-3">
       <div class="service service-summary">
         <div class="service-content">
+          <div><img src="{{ product.image | relative_url }}" style="object-fit:scale-down; width: 100%; max-height: 220px;" /></div>
           <h2 class="service-title">
-            <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+            <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
           </h2>
-          <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+          <p>{{ product.content | markdownify | strip_html | truncate: 100 }}</p>
         </div>
       </div>
     </div>
