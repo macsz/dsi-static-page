@@ -1,5 +1,5 @@
-baseurl: '/'
-my_url: 'http://165.227.128.98:4000'
+baseurl: '/dsifood/'
+my_url: 'https://dsifood.github.io/dsifood/'
 permalink: pretty
 title: 'DSI Food Technology'
 
