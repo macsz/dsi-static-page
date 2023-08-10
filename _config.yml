@@ -35,7 +35,7 @@ defaults:
 
 # multiple-languages
 languages: ["pl", "en", "de", "es", "ru"]
-# exclude_from_localizations: ["assets", "images"]
+exclude_from_localizations: ["docs"]
 # end multiple-languages
 
 sass:
