@@ -24,9 +24,14 @@ bodyClass: "page-teams"
                             {{ team.title }}
                         <!-- </a> -->
                     </h2>
-                    <p class="team-description">{{ team.jobtitle }}</p>
+                    <p class="team-description">{% t team.jobtitle %}</p>
                     <div class="call-phone"><strong>{% t contact.phone %}: </strong> {{ team.phone }} </div>
-                    <div class="call-phone"><strong>{% t contact.email %}: </strong> {{ team.email }} </div>
+                    <div class="call-phone">
+                        <strong>{% t contact.email %}: </strong>
+                        {% if team.email %}
+                        <a href="mailto:{{ team.email }}">{{ team.email }}</a>
+                        {% endif %}
+                    </div>
                     <!-- {% if team.linkedinurl %}
                     <a target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer">LinkedIn</a>
                     {% endif %} -->
