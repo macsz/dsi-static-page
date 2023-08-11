@@ -2,7 +2,7 @@
 title: "Kacper Wysocki"
 date: 2018-11-19T10:47:58+10:00
 image:
-jobtitle: "Serwis"
+jobtitle: "jobtitle.service"
 linkedinurl: "https://www.linkedin.com/example2"
 promoted: true
 weight: 2
