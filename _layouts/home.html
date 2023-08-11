@@ -25,13 +25,11 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start" style="margin-bottom: 25px; padding-bottom: 25px;">
-      <div style="margin-bottom: 25px; padding-bottom:25px;">
-        <p>Historia firmy rozpoczęła się w 2011 roku. Nasze doświadczenia w branży spożywczej sięgają początku lat 90. Początkowo zajmowaliśmy się handlem i doradztwem, a od paru lat samodzielnie projektujemy i wykonujemy urządzenia do przetwórstwa spożywczego. Jesteśmy dumni z naszych projektów, których znaczna część to rozwiązania prototypowe nie mające swoich odpowiedników u innych producentów.</p>
-        <p>Jesteśmy jedynym przedstawicielem firmy Heinrich GmbH, producenta wielu ciekawych i nietypowych rozwiązań w branży przetwórczej.</p>
-        <p>Naszym celem jest stały rozwój, chcemy uczyć się we współpracy z naszymi klientami dla obopólnych korzyści.</p>
-        <p>Satysfakcja naszych Klientów jest również naszą satysfakcją.</p>
+      <div style="margin-bottom: 25px; padding:0px 15px 25px 15px;">
+        {% tf home/about_company.md %}
       </div>
-
+      
+      <div class="col-12"><h1>{% t products.products %}</h1></div>
       {% assign limit = site.home.limit_products | default: 6 %}
       {% for product in site.products limit: limit %}
       <div class="col-12 col-md-4 mb-1">
