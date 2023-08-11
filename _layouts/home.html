@@ -53,7 +53,11 @@ bodyClass: "page-home"
     </div>
     <div class="row justify-content-center">
       <div class="col-auto">
+        {% if site.lang == 'pl' %}
         <a class="button button-primary" href="{{ "products" | relative_url }}">{% t products.see_all %}</a>
+        {% else %}
+        <a class="button button-primary" href="{{ site.my_url }}/{{site.lang}}/products">{% t products.see_all %}</a>
+        {% endif %}
       </div>
     </div>
   </div>
