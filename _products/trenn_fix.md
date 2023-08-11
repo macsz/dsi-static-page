@@ -10,6 +10,8 @@ image: images/products/trenn_fix.jpeg
 - możliwość natrysku środka konserwującego lub oleju podczas rozcinania
 - wydajność do 2000 kg/h
 
+<iframe width="315" height="560" src="https://www.youtube.com/embed/pnN6wWiHDHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <!-- Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
