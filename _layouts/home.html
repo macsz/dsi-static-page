@@ -37,7 +37,13 @@ bodyClass: "page-home"
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
-            <div><img src="{{ product.image }}" style="object-fit:scale-down; width: 100%; max-height: 220px;" /></div>
+            {% if product.image == 'images/products/empty.png' %}
+            <div class="product empty">
+            {% else %}
+            <div class="product">
+            {% endif %}
+              <img src="{{ product.image }}" />
+            </div>
             <h2 class="service-title">
               <a href="{{ product.url | relative_url }}">{{ product.title }}</a>
             </h2>
