@@ -8,8 +8,12 @@ bodyClass: "page-service"
     <div class="col-12 col-md-8">
       <div class="service service-single">
         <h1 class="title">{{page.title}}</h1>
-        <div>
-          <img src="{{ page.image | relative_url }}" style="width: auto; height: auto; max-width: 600px; max-height: 400px;" />
+        {% if page.image == 'images/products/empty.png' %}
+        <div class="product empty">
+        {% else %}
+        <div class="product">
+        {% endif %}
+          <img src="{{ page.image | relative_url }}" class="large_product_image" />
         </div>
         <div class="content">{{content}}</div>
         {% include call.html show_button=true %}
